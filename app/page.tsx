@@ -1209,7 +1209,7 @@ export default function HomePage() {
     (function () {
       var d = document;
       var s = d.createElement("script");
-      s.src = "https://teleperson.webagent.ai/api/chatbot/industry/insurance";
+      s.src = "https://teleperson.webagent.ai/api/chatbot/industry/pharmacy";
       s.async = true;
       d.getElementsByTagName("head")[0].appendChild(s);
     })();
@@ -1369,7 +1369,7 @@ export default function HomePage() {
         scriptUrl = "https://teleperson.webagent.ai/api/chatbot/industry/consumerpackagedgoods"
         break
       case "insurance":
-        scriptUrl = "https://teleperson.webagent.ai/api/chatbot/industry/insurance"
+        scriptUrl = "https://teleperson.webagent.ai/api/chatbot/industry/pharmacy"
         break
       default:
         scriptUrl = "https://teleperson.webagent.ai/api/chatbot/industry/sales"
@@ -1665,7 +1665,7 @@ export default function HomePage() {
                 chatbotUrl = "https://teleperson.webagent.ai/api/chatbot/industry/consumerpackagedgoods";
                 break;
             case 'insurance':
-                chatbotUrl = "https://teleperson.webagent.ai/api/chatbot/industry/insurance";
+                chatbotUrl = "https://teleperson.webagent.ai/api/chatbot/industry/pharmacy";
                 break;
             default:
                 chatbotUrl = "https://teleperson.webagent.ai/api/chatbot/industry/sales";
