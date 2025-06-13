@@ -625,7 +625,7 @@ export default function HomePage() {
           '[aria-label*="call" i]:not([aria-label*="fullscreen" i]):not([aria-label*="expand" i]):not([aria-label*="minimize" i])',
           '[title*="call" i]:not([title*="fullscreen" i]):not([aria-label*="expand" i]):not([title*="minimize" i])',
           '[aria-label*="microphone" i]:not([aria-label*="fullscreen" i]):not([aria-label*="expand" i]):not([aria-label*="minimize" i])',
-          '[title*="microphone" i]:not([aria-label*="fullscreen" i]):not([aria-label*="expand" i]):not([aria-label*="minimize" i])',
+          '[title*="microphone" i]:not([aria-label*="fullscreen" i]):not([aria-label*="expand" i]):not([title*="minimize" i])',
           '[aria-label*="mic" i]:not([aria-label*="fullscreen" i]):not([aria-label*="expand" i]):not([aria-label*="minimize" i])',
         ]
 
@@ -1209,7 +1209,7 @@ export default function HomePage() {
     (function () {
       var d = document;
       var s = d.createElement("script");
-      s.src = "https://teleperson.webagent.ai/api/chatbot/industry/pharmacy";
+      s.src = "https://teleperson.webagent.ai/api/chatbot/industry/insurance";
       s.async = true;
       d.getElementsByTagName("head")[0].appendChild(s);
     })();
@@ -1369,7 +1369,7 @@ export default function HomePage() {
         scriptUrl = "https://teleperson.webagent.ai/api/chatbot/industry/consumerpackagedgoods"
         break
       case "insurance":
-        scriptUrl = "https://teleperson.webagent.ai/api/chatbot/industry/pharmacy"
+        scriptUrl = "https://teleperson.webagent.ai/api/chatbot/industry/insurance"
         break
       default:
         scriptUrl = "https://teleperson.webagent.ai/api/chatbot/industry/sales"
@@ -1665,7 +1665,7 @@ export default function HomePage() {
                 chatbotUrl = "https://teleperson.webagent.ai/api/chatbot/industry/consumerpackagedgoods";
                 break;
             case 'insurance':
-                chatbotUrl = "https://teleperson.webagent.ai/api/chatbot/industry/pharmacy";
+                chatbotUrl = "https://teleperson.webagent.ai/api/chatbot/industry/insurance";
                 break;
             default:
                 chatbotUrl = "https://teleperson.webagent.ai/api/chatbot/industry/sales";
