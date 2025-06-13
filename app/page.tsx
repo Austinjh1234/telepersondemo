@@ -31,6 +31,7 @@ import {
 } from "lucide-react"
 import { analytics, AnalyticsProvider } from "@/components/analytics-tracker"
 import { MicPermissionModal } from "@/components/mic-permission-modal"
+import { WaitlistModal } from "@/components/waitlist-modal"
 
 // Throttle function to limit how often a function can be called
 function throttle<T extends (...args: any[]) => any>(func: T, limit: number): (...args: Parameters<T>) => void {
@@ -1517,16 +1518,18 @@ export default function HomePage() {
                   className="h-8 w-auto"
                 />
               </div>
-              <Button className="bg-orange-600 hover:bg-orange-700">Join Waitlist</Button>
+              <WaitlistModal selectedSector={selectedSector}>
+                <Button className="bg-orange-600 hover:bg-orange-700">Join Waitlist</Button>
+              </WaitlistModal>
             </div>
           </div>
         </header>
 
         {/* Sector Selection */}
         <div className="container mx-auto p-4">
-          <div className="flex flex-wrap items-center justify-center gap-2 mb-4">
+          <div className="flex flex-wrap items-center gap-2 mb-4">
             <span className="text-gray-400 text-sm">Select Industry:</span>
-            <div className="flex flex-wrap gap-2 justify-center">
+            <div className="flex flex-wrap gap-2">
               {sectors.map((sector) => (
                 <Button
                   key={sector.value}
@@ -1545,9 +1548,9 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-2">
+          <div className="flex flex-wrap items-center gap-2">
             <span className="text-gray-400 text-sm">Select Capabilities:</span>
-            <div className="flex flex-wrap gap-2 justify-center">
+            <div className="flex flex-wrap gap-2">
               {capabilities.map((capability) => (
                 <Button
                   key={capability.value}
